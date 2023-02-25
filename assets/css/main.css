@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #132026;
+    display: flex;
+}
+
+.landing-page::before {
+    content: "";
+    height: calc(100vh + 20px);
+    width: calc(100vw + 20px);
+    position: absolute;
+    margin: -10px;
+    top: 0;
+    left: 0;
+    background-image: url('../img/trinquons.webp');
+    background-size: cover;
+    background-position: center center;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    opacity: 0.75;
+}
+
+.landing-content {
+    margin: 20px 0;
+    padding: 20px;
+    max-width: 900px;
+    flex: 1 1 auto;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+    background-color: rgba(19, 32, 38, 0.9);
+}
+
+.mialt-logo {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.mialt-logo-name {
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+.main-title {
+    color: #e3d6b3;
+    text-align: center;
+}
